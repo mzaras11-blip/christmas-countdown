@@ -1,5 +1,6 @@
 import SwiftUI
 import WebKit
+import SafariServices
 
 /// JS -> native haptics bridge. Web code can call:
 ///   window.webkit.messageHandlers.haptics.postMessage("light" | "medium" | "heavy"
@@ -68,10 +69,33 @@ final class AdsBridge: NSObject, WKScriptMessageHandler {
     }
 }
 
+/// JS -> native link opener for the Events tab. Web code calls:
+///   window.webkit.messageHandlers.links.postMessage({action: "openEvent", url: "..."})
+/// The event page opens in an SFSafariViewController sheet over the app,
+/// so tapping a card never navigates the app's own web view away (there
+/// is no browser chrome or back button to return with).
+final class LinksBridge: NSObject, WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController,
+                               didReceive message: WKScriptMessage) {
+        guard message.name == "links",
+              let dict = message.body as? [String: Any],
+              (dict["action"] as? String) == "openEvent",
+              let raw = dict["url"] as? String,
+              let url = URL(string: raw),
+              url.scheme == "https" || url.scheme == "http" else { return }
+        DispatchQueue.main.async {
+            guard let vc = topViewController() else { return }
+            let safari = SFSafariViewController(url: url)
+            vc.present(safari, animated: true)
+        }
+    }
+}
+
 /// Holds all JS bridges for the web view's lifetime.
 final class WebCoordinator: NSObject {
     let haptics = HapticsBridge()
     let ads = AdsBridge()
+    let links = LinksBridge()
 }
 
 /// Full-screen web view hosting the bundled countdown page at web/index.html.
@@ -86,6 +110,7 @@ struct WebView: UIViewRepresentable {
         config.mediaTypesRequiringUserActionForPlayback = []
         config.userContentController.add(context.coordinator.haptics, name: "haptics")
         config.userContentController.add(context.coordinator.ads, name: "ads")
+        config.userContentController.add(context.coordinator.links, name: "links")
 
         let webView = WKWebView(frame: .zero, configuration: config)
         // Wire the ads bridge back to this web view for peek callbacks.
