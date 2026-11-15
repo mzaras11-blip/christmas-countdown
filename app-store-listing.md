@@ -1,6 +1,6 @@
-# Christmas Countdown Timer — App Store Listing Copy
+# Santa Countdown Timer — App Store Listing Copy
 
-- **Name:** Christmas Countdown Timer
+- **Name:** Santa Countdown Timer
 - **Subtitle:** Sleeps, Advent & Snow Watch
 - **Bundle ID:** com.swishgame.christmascountdown
 - **Version:** 1.0 (build 1)
@@ -15,7 +15,7 @@ How many sleeps until Christmas? Watch the days melt away under falling snow —
 
 The most wonderful time of the year deserves a proper countdown.
 
-Christmas Countdown Timer counts down to Christmas Day — Thursday, December 25, 2026 — in your own local time, with live days, hours, minutes and seconds, total hours remaining, and the all-important number: how many SLEEPS are left.
+Santa Countdown Timer counts down to Christmas Day — Thursday, December 25, 2026 — in your own local time, with live days, hours, minutes and seconds, total hours remaining, and the all-important number: how many SLEEPS are left.
 
 Open the app to a short festive loading show with original Christmas artwork, then settle in under gently falling snow.
 
@@ -31,7 +31,7 @@ FEATURES
 • Original generated artwork throughout — the village tree, the baubles, the cozy cabin
 • Works offline — only the forecast needs a connection, and it waits politely when there isn't one
 
-Christmas Countdown Timer is an original, independent app. Weather data by Open-Meteo.
+Santa Countdown Timer is an original, independent app. Weather data by Open-Meteo.
 
 ## Keywords
 
