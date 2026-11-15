@@ -1,0 +1,203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		CC01B00000000000000000A1 /* ChristmasCountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A1 /* ChristmasCountdownApp.swift */; };
+		CC01B00000000000000000A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A2 /* Assets.xcassets */; };
+		CC01B00000000000000000A3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A3 /* PrivacyInfo.xcprivacy */; };
+		CC01B00000000000000000A4 /* web in Resources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A4 /* web */; };
+		CC01F00000000000000000A0 /* ChristmasCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC01F00000000000000000A1 /* ChristmasCountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdownApp.swift; sourceTree = "<group>"; };
+		CC01F00000000000000000A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC01F00000000000000000A3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CC01F00000000000000000A4 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/web; sourceTree = "<group>"; };
+		CC01F00000000000000000A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC01P00000000000000000A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC01B00000000000000000A1 /* ChristmasCountdownApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC01P00000000000000000A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC01B00000000000000000A2 /* Assets.xcassets in Resources */,
+				CC01B00000000000000000A3 /* PrivacyInfo.xcprivacy in Resources */,
+				CC01B00000000000000000A4 /* web in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC01P00000000000000000A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC01G00000000000000000A0 = {
+			isa = PBXGroup;
+			children = (
+				CC01G00000000000000000A1 /* ChristmasCountdown */,
+				CC01G00000000000000000A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC01G00000000000000000A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC01F00000000000000000A0 /* ChristmasCountdown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC01G00000000000000000A1 /* ChristmasCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				CC01F00000000000000000A1 /* ChristmasCountdownApp.swift */,
+				CC01F00000000000000000A5 /* Info.plist */,
+				CC01F00000000000000000A2 /* Assets.xcassets */,
+				CC01F00000000000000000A3 /* PrivacyInfo.xcprivacy */,
+				CC01F00000000000000000A4 /* web */,
+			);
+			path = ChristmasCountdown;
+			sourceTree = "<group>";
+		};
+		CC01T00000000000000000A1 /* ChristmasCountdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC01L00000000000000000A2 /* Build configuration list for PBXNativeTarget "ChristmasCountdown" */;
+			buildPhases = (
+				CC01P00000000000000000A1 /* Sources */,
+				CC01P00000000000000000A3 /* Frameworks */,
+				CC01P00000000000000000A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChristmasCountdown;
+			productName = ChristmasCountdown;
+			productReference = CC01F00000000000000000A0 /* ChristmasCountdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC01J00000000000000000A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = CC01L00000000000000000A1 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en);
+			mainGroup = CC01G00000000000000000A0;
+			productRefGroup = CC01G00000000000000000A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC01T00000000000000000A1 /* ChristmasCountdown */,
+			);
+		};
+		CC01L00000000000000000A1 /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC01C00000000000000000A1 /* Debug */,
+				CC01C00000000000000000A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC01L00000000000000000A2 /* Build configuration list for PBXNativeTarget "ChristmasCountdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC01C00000000000000000B1 /* Debug */,
+				CC01C00000000000000000B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC01C00000000000000000A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CC01C00000000000000000A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC01C00000000000000000B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ChristmasCountdown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swishgame.christmascountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		CC01C00000000000000000B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ChristmasCountdown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swishgame.christmascountdown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+	};
+	rootObject = CC01J00000000000000000A1 /* Project object */;
+}
