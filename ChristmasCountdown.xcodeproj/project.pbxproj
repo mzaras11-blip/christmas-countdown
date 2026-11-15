@@ -9,17 +9,20 @@
 		CC01B00000000000000000A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A2 /* Assets.xcassets */; };
 		CC01B00000000000000000A3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A3 /* PrivacyInfo.xcprivacy */; };
 		CC01B00000000000000000A4 /* web in Resources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A4 /* web */; };
+		CC01B00000000000000000A5 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC01F00000000000000000A6 /* AdManager.swift */; };
 		CC01F00000000000000000A0 /* ChristmasCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC01F00000000000000000A1 /* ChristmasCountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdownApp.swift; sourceTree = "<group>"; };
 		CC01F00000000000000000A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC01F00000000000000000A3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		CC01F00000000000000000A4 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/web; sourceTree = "<group>"; };
 		CC01F00000000000000000A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC01F00000000000000000A6 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		CC01P00000000000000000A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CC01B00000000000000000A1 /* ChristmasCountdownApp.swift in Sources */,
+				CC01B00000000000000000A5 /* AdManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				CC01F00000000000000000A1 /* ChristmasCountdownApp.swift */,
+				CC01F00000000000000000A6 /* AdManager.swift */,
 				CC01F00000000000000000A5 /* Info.plist */,
 				CC01F00000000000000000A2 /* Assets.xcassets */,
 				CC01F00000000000000000A3 /* PrivacyInfo.xcprivacy */,
@@ -81,6 +85,9 @@
 			dependencies = (
 			);
 			name = ChristmasCountdown;
+			packageProductDependencies = (
+				CC01K00000000000000000A2 /* GoogleMobileAds */,
+			);
 			productName = ChristmasCountdown;
 			productReference = CC01F00000000000000000A0 /* ChristmasCountdown.app */;
 			productType = "com.apple.product-type.application";
@@ -98,12 +105,28 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (en);
 			mainGroup = CC01G00000000000000000A0;
+			packageReferences = (
+				CC01K00000000000000000A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = CC01G00000000000000000A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CC01T00000000000000000A1 /* ChristmasCountdown */,
 			);
+		};
+		CC01K00000000000000000A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		CC01K00000000000000000A2 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC01K00000000000000000A1 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 		CC01L00000000000000000A1 /* Build configuration list for PBXProject */ = {
 			isa = XCConfigurationList;

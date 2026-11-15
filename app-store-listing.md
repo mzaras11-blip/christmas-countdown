@@ -3,13 +3,13 @@
 - **Name:** Santa Countdown Timer
 - **Subtitle:** Sleeps, Advent & Snow Watch
 - **Bundle ID:** com.swishgame.christmascountdown
-- **Version:** 1.0 (build 1)
+- **Version:** 1.0 (build 2)
 - **Primary category:** Entertainment
 - **Secondary category:** Utilities
 
 ## Promotional Text
 
-How many sleeps until Christmas? Watch the days melt away under falling snow — with a live countdown, an Advent calendar, Santa's own status reports and a White Christmas watch.
+How many sleeps until Christmas? Watch the days melt away under snow — with a live countdown, an Advent calendar, Santa's own status reports and a White Christmas watch.
 
 ## Description
 
@@ -22,14 +22,15 @@ Open the app to a short festive loading show with original Christmas artwork, th
 FEATURES
 • Live countdown to December 25 — days, hours, minutes, seconds and total hours
 • SLEEPS LEFT — the classic big, friendly count of nights remaining
-• ADVENT CALENDAR — 25 doors, one for each day of December. Each door opens only on its date and hides a joke, a festive fact or a little hand-drawn picture. Your opened doors are remembered on your device
+• ADVENT CALENDAR — 25 doors, one for each day of December. Each door opens only on its date and hides a joke, a festive fact or a little hand-drawn picture. Your opened doors are remembered on your device. Can't wait? Watch a short ad to peek at tomorrow's door a day early — one door per ad
+• ADS — a small banner at the bottom of the screen, plus the optional short video described above if you choose to peek early. No pop-up ads, ever
 • SANTA STATUS — live updates from the North Pole all December long, from reindeer training to the big Christmas Eve departure
 • DAILY FORECAST — a per-day weather strip for every day between now and Christmas morning, for your location (or our default hometown)
 • WHITE CHRISTMAS WATCH — will it snow on Christmas Day? The app watches the Dec 25 forecast and gives you the odds as soon as it's in range
 • SNOW GLOBE — shake your phone (or tap the button) for a flurry of snow and a synthesized Jingle Bells chime
 • A MERRY CHRISTMAS celebration the moment the clock reaches zero — and then it quietly starts counting to next Christmas
 • Original generated artwork throughout — the village tree, the baubles, the cozy cabin
-• Works offline — only the forecast needs a connection, and it waits politely when there isn't one
+• Works offline — the countdown, calendar and snow globe are all built in; only the forecast and the ads need a connection, and both wait politely when there isn't one
 
 Santa Countdown Timer is an original, independent app. Weather data by Open-Meteo.
 
@@ -40,7 +41,7 @@ sleeps,advent,santa,snow globe,xmas,holiday,december,white christmas,weather,san
 ## Support / Marketing Notes
 
 - Support URL: (set when the support page is published)
-- Privacy: the app collects no data and shows no ads. Location is used only, with permission, to fetch the local forecast from Open-Meteo; it is never stored or shared. Advent door progress is stored only on the device.
+- Privacy: the app shows ads served by Google AdMob — one small banner, and an optional rewarded video only when you tap to peek at tomorrow's Advent door early. AdMob may use your device's advertising identifier to personalize ads; on first launch the app asks for tracking permission (App Tracking Transparency), and you will still see ads if you decline — they just won't be personalized. The app itself collects no personal data and runs no analytics. Location is used only, with permission, to fetch the local forecast from Open-Meteo; it is never stored or shared by the app. Advent door progress is stored only on the device.
 
 ## Screenshot Captions
 
